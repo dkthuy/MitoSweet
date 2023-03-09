@@ -38,7 +38,7 @@ class AuthServiceProvider extends ServiceProvider
                 return true;
             }
         });
-//        Gate::define('quanlytintuc',function(){
+        Gate::define('quanlytintuc',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -48,11 +48,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlylienhe',function(){
+        });
+        Gate::define('quanlylienhe',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -62,11 +62,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlynhantin',function(){
+        });
+        Gate::define('quanlynhantin',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -76,11 +76,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlyvideo',function(){
+        });
+        Gate::define('quanlyvideo',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -90,11 +90,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlylichhoc',function(){
+        });
+        Gate::define('quanlylichhoc',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -104,11 +104,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlygiaodien',function(){
+        });
+        Gate::define('quanlygiaodien',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -118,11 +118,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlykhoahoc',function(){
+        });
+        Gate::define('quanlykhoahoc',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -132,11 +132,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlybanh',function(){
+        });
+        Gate::define('quanlybanh',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -146,11 +146,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlydoanhthu',function(){
+        });
+        Gate::define('quanlydoanhthu',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -160,11 +160,11 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
-//        Gate::define('quanlytaikhoan',function(){
+        });
+        Gate::define('quanlytaikhoan',function(){
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
@@ -174,9 +174,9 @@ class AuthServiceProvider extends ServiceProvider
 //                    return false;
 //                }
 //                else{
-//                    return true;
+                    return true;
 //                }
 //            }
-//        });
+        });
     }
 }
