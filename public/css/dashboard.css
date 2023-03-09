@@ -1,0 +1,378 @@
+.bg-login{
+    background-image: url(../img/img_section_4_backgroud_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #2e1503;
+}
+.form-login{
+    padding: 80px 30px;
+    width: auto;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-top: 10%;
+    box-shadow: 2px 2px #2e1503;
+}
+.form-login .form-control{
+    margin-top: 10px;
+}
+/* Header admin */
+#header-admin{
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+#header-admin h4{
+    display: inline-block;
+}
+#header-admin i{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#header-admin .dropdown-menu {
+    color: #2e1503;
+    background-color: #ffd1dc;
+    font-weight: 600;
+}
+#header-admin .dropdown-item:hover {
+    color: #ffd1dc;
+    background-color: #2e1503d8;
+}
+#header-admin .dropdown-item:active {
+    color: #ffd1dc;
+    background-color: #2e1503;
+}
+
+/* Sidebar */
+.sidebar {
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #ffd1dc;
+    padding: 0 !important;
+    height: fit-content;
+    width: 18%;
+}
+.navside{
+    height: calc(100vh - 50px);
+    background-color: #ffd1dc;
+}
+#main-admin{
+    width: 82%;
+}
+#sidebarMenu .nav-link{
+    text-transform: capitalize;
+}
+
+.sidebar .nav-link {
+        color: #2e1503;
+}
+
+.sidebar .nav-link i{
+    width: 25px;
+}
+
+.sidebar .nav-link.active {
+    color: #ffd1dc;
+    background-color: #2e1503;
+}
+
+.sidebar .nav-link:hover {
+    color: #ffd1dc;
+    background-color: #2e1503d8;
+}
+
+.navside li{
+    position: relative;
+    background-color: #ffd1dc;
+}
+
+button.btn.icon-show {
+    float: right;
+}
+
+.collapsed button.btn.icon-show:before
+{
+    font-family: Font Awesome\ 5 Free;
+    content:'\f107';
+    font-weight: 900;
+    float: right;
+    border: none;
+    border-radius: 0;
+    color: #2e1503;
+}
+button.btn.icon-show:before{
+    font-family: Font Awesome\ 5 Free;
+    content:'\f106';
+    font-weight: 900;
+    float: right;
+    border: none;
+    border-radius: 0;
+    color: #ffd1dc;
+}
+
+/* Menu Sub */
+.submenu .nav-link {
+    color: #2e1503;
+}
+
+.submenu .nav-link i{
+padding-right: 5px;
+}
+
+.submenu .nav-link.active {
+color: #ffd1dc;
+background-color: #2e1503;
+}
+
+.submenu .nav-link:hover {
+color: #ffd1dc;
+background-color: #2e1503d8;
+}
+ul.submenu{
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+
+/* toggle menu */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2e1503;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(18px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 15px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* profile */
+.admin-content{
+    padding: 1% 0 0;
+}
+.breadcrumb-admin{
+    color: #2e1503;
+    font-weight: 600;
+}
+.avatar{
+    text-align: center;
+    padding: 5% 0;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 50%;
+}
+.avatar label{
+    display: block;
+}
+.profile-infor{
+    text-align: center;
+    padding: 5% 0;
+}
+.profile-infor i{
+    padding-right: 1%;
+}
+
+/* Đổi mật khẩu */
+/* .change-form{
+    padding: 2%;
+} */
+.change-form .control-label{
+    font-weight: 600;
+}
+.change-form .required.control-label:after {
+    content:"*";
+    color:red;
+}
+.change-form .form-control{
+    margin-bottom: 2%;
+}
+.change-form .btn-change,
+.change-form .btn-back{
+    margin-bottom: 0.5%;
+    font-weight: 600;
+}
+.btn-change{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffd1dc;
+    color: #2e1503;
+    border: 1px solid #2e1503;
+    padding: 0.5% 0;
+}
+.btn-change:hover{
+    background-color: #2e1503;
+    color: #ffd1dc;
+    border: 1px solid #ffd1dc;
+}
+.btn-back{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #cfefcc;
+    color: #2e1503;
+    border: 1px solid #2e1503;
+    padding: 0.5% 0;
+}
+.btn-back:hover{
+    background-color: #2e1503;
+    color: #cfefcc;
+    border: 1px solid #cfefcc;
+}
+.change-form i{
+    width: 20px;
+}
+
+/* news */
+.btn-func{
+    margin: 0 15px;
+}
+
+.btn-gr{
+    margin: -10px 0 15px 25px;
+}
+
+#main-admin .card-body{
+    padding: 2%;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 25%;
+    }
+    #main-admin{
+        width: 75%;
+    }
+}
+@media (max-width: 812px) {
+    .sidebar {
+        width: 30%;
+    }
+    #main-admin{
+        width: 70%;
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        top: 5rem;
+        width: 35%;
+    }
+    #main-admin{
+        width: 65%;
+    }
+}
+@media (max-width: 658px) {
+    .sidebar {
+        width: 100%;
+    }
+    .navside{
+        height: fit-content;
+    }
+    #main-admin{
+        width: 100%;
+    }
+}
+
+/* Hiển thị hình ảnh */
+.box-preview-img {
+    margin-top: 10px;
+    /* display: none; */
+}
+.box-preview-img img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    margin-right: 15px;
+}
+.preview-img{
+    width: 70px;
+    height: 70px;
+}
+
+/* CheckAll */
+input[type=checkbox]#checkAll {
+    position: relative;
+    cursor: pointer;
+    right: 20px;
+    bottom: 7px;
+}
+input[type=checkbox]#checkAll:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2e1503;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]#checkAll:checked:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 20px;
+    border: solid #2e1503;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top:3px;
+    left: 10px;
+}
+
+.bg-product.admin{
+    background-color: #ffffff;
+}
+.pagination{
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+.size{
+    margin-bottom: 2%;
+}
