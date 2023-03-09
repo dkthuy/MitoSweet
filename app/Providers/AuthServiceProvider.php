@@ -42,8 +42,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'1') === false){
 //                    return false;
 //                }
@@ -56,8 +56,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'2') === false){
 //                    return false;
 //                }
@@ -70,8 +70,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'3') === false){
 //                    return false;
 //                }
@@ -84,8 +84,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'4') === false){
 //                    return false;
 //                }
@@ -98,8 +98,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'5') === false){
 //                    return false;
 //                }
@@ -112,8 +112,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'6') === false){
 //                    return false;
 //                }
@@ -126,8 +126,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'7') === false){
 //                    return false;
 //                }
@@ -140,8 +140,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'8') === false){
 //                    return false;
 //                }
@@ -154,13 +154,13 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+                $data_user = Auth::user();
+                view()->share('data_user',$data_user);
 //                if(strpos($type,'9') === false){
 //                    return false;
 //                }
 //                else{
-                    return true;
+//                    return true;
 //                }
 //            }
         });
@@ -168,8 +168,8 @@ class AuthServiceProvider extends ServiceProvider
 //            if(Auth::check()){
 //                $type = Auth::user()->type;
 //                $type = DB::table('account_types')->where('id',$type)->select('roles')->get();
-//                $data_user = Auth::user();
-//                view()->share('data_user',$data_user);
+              $data_user = Auth::user();
+              view()->share('data_user',$data_user);
 //                if(strpos($type,'10') === false){
 //                    return false;
 //                }
