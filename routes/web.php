@@ -217,7 +217,7 @@ Route::prefix('public')->namespace('User')->group(function () {
 
         //     dd("Email is Sent.");
         // });
-        Route::get('sign-in/login/{provider}', ['as' => 'login', 'uses' =>'SigninController@redirect']);
-        Route::get('sign-in/{provider}/callback','SigninController@callback');
+        Route::get('sign-in/login/{provider}', ['as' => 'login', 'uses' =>'SignInController@redirect']);
+        Route::get('sign-in/{provider}/callback','SignInController@callback');
 });
 Route::get('view', 'IndexController@profile');
