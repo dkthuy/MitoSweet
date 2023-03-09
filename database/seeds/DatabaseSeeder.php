@@ -15,16 +15,7 @@ class DatabaseSeeder extends Seeder
         DB::table('account_types')->insert([
             'name' => 'admin',
         ]);
-        DB::table('accounts')->insert([
-            'img' =>'a',
-            'name' => 'admin',
-            'password' => bcrypt('123456'),
-            'fullname' => 'Mito Sweet',
-            'email' => 'mitosweets.demo@gmail.com',
-            'phone'=>'0938756845',
-            'status' => '1',
-            'type' => '1'
-        ]);
+
         DB::table('account_roles')->insert([
             [
                 'name' => 'Quản lý tin tức',
@@ -56,6 +47,17 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Quản lý tài khoản',
             ],
+        ]);
+
+        DB::table('accounts')->insert([
+            'img' =>'a',
+            'name' => 'admin',
+            'password' => bcrypt('123456'),
+            'fullname' => 'Mito Sweet',
+            'email' => 'mitosweets.demo@gmail.com',
+            'phone'=>'0938756845',
+            'status' => '1',
+            'type' => '1'
         ]);
         // $this->call(UsersTableSeeder::class);
     }
