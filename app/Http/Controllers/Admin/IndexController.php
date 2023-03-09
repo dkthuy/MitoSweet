@@ -8,6 +8,16 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
+    public function index()
+    {
+        return view('admin.index');
+    }
+
+    public function profile()
+    {
+        return view('user.profile');
+    }
+
     public function edit(Request $request, $id){
         $account = Accounts::find($id);
         if($request->isMethod('post')){

@@ -23,9 +23,7 @@ Route::group(['middleware' => 'checklogout' , 'namespace' => 'Admin'], function 
 });
 Route::group(['middleware' => 'checklogin' , 'namespace' => 'Admin'], function () {
     Route::get('/logout', 'LoginController@checklogout');
-    Route::get('/', function () {
-        return view('admin.index');
-    })->middleware(['can:change_user']);
+    Route::get('/', 'IndexController@index')->middleware(['can:change_user']);
 
     Route::match(['get', 'post'],'edit/{id}', 'IndexController@edit');
     Route::match(['get', 'post'],'change-pass/{id}', 'IndexController@changePass');
@@ -160,9 +158,9 @@ Route::group(['middleware' => 'checklogin' , 'namespace' => 'Admin'], function (
 });
 
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
-    \UniSharp\LaravelFilemanager\Lfm::routes();
-});
+//Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+//    \UniSharp\LaravelFilemanager\Lfm::routes();
+//});
 Route::prefix('public')->namespace('User')->group(function () {
         Route::get('index',
                     ['as' => 'index', 'uses' => 'PagesController@data']);
@@ -222,6 +220,4 @@ Route::prefix('public')->namespace('User')->group(function () {
         Route::get('sign-in/login/{provider}', ['as' => 'login', 'uses' =>'SigninController@redirect']);
         Route::get('sign-in/{provider}/callback','SigninController@callback');
 });
-Route::get('view', function () {
-    return view('user.profile');
-});
+Route::get('view', 'IndexController@profile');
